@@ -1,0 +1,46 @@
+int main()
+{
+      //left=3
+      //right=2
+     //mav(3,200);
+     //mav(2,200);
+     //motor(3,100);
+     //motor(2,100);
+ printf("move forward");
+    	cmpc(2); 
+    	cmpc(3);
+    while (gmpc(3) < 1200)
+    { move_at_velocity(2,500); 
+      move_at_velocity(3,500); 
+    }
+    ao (); 
+    	enable_servo(0);
+    	set_servo_position(0, 1400); 
+//closes the claw  
+  	//lifts up noodle 
+    msleep(40); 
+ 	//motor_power(0,-80); 
+    motor_power(0,-75);
+    msleep(1000);  
+    
+    //moves backwords into cybersecurity
+ 	mav(2, -4500); 
+    msleep(2000); 
+    
+    //moves foward
+    mrp(2, 500, 5000); 
+    mrp(3, 500, 5000); 
+    bmd(2);
+    bmd(3);
+    msleep(100);     
+
+    enable _servo(0); 
+    set_servo_position(0, 921); 
+    //opens the claw and drops the noodle 
+    
+    //moves backwards
+    motor(2, -30);
+    motor(3, -30);
+    msleep(1000); 
+    
+   
