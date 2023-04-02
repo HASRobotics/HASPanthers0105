@@ -43,6 +43,22 @@ int main()
     motor(3, -30);
     msleep(1000); 
    
+//moves backwards
+    motor(2, -50);
+    motor(3, -50);
+    msleep(1000); 
+    
+    //turns to pick up noodle 
+    msleep(100); 
+    mrp(2, 500, 5000); 
+    mrp(3, 500, 1000); 
+    bmd(2);
+    bmd(3);
+    
+    //closes the claw up the noodle
+    enable_servo(0); 
+    set_servo_position(0, 1400);
+
 return 0; 
 }
    
